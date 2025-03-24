@@ -3,7 +3,6 @@ import sys
 
 import pytest
 
-# Add the parent directory to sys.path to import the app module
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from app.fact_checker import TeapotFactChecker
 
@@ -32,5 +31,4 @@ def test_factual_response_with_context(fact_checker):
 def test_refusal_without_context(fact_checker):
     """Test that the fact checker refuses to answer without context"""
     result = fact_checker.check_fact(query="When was the Great Wall of China built?")
-    # The model should indicate it cannot answer without context
     assert result["confidence"] < 0.5

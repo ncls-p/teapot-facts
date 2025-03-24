@@ -4,7 +4,6 @@ import sys
 import pytest
 from fastapi.testclient import TestClient
 
-# Add the parent directory to sys.path to import the app module
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from app.api import app
 
@@ -95,7 +94,6 @@ def test_list_models_api(client):
 
 def test_get_model_api(client):
     """Test the OpenAI-compatible get model endpoint"""
-    # Test valid model
     response = client.get("/v1/models/teapot-llm")
     assert response.status_code == 200
     assert response.json()["id"] == "teapot-llm"
@@ -103,7 +101,6 @@ def test_get_model_api(client):
     assert "created" in response.json()
     assert response.json()["owned_by"] == "teapot-org"
 
-    # Test invalid model
     response = client.get("/v1/models/nonexistent-model")
     assert response.status_code == 404
 
@@ -136,20 +133,15 @@ def test_extraction_api(client):
     )
     assert response.status_code == 200
     json_response = response.json()
-    # If we got an error, print it for debugging
     if not json_response["success"]:
         print(f"Extraction error: {json_response.get('error')}")
 
-    # Check basic structure
     assert "success" in json_response
     assert "data" in json_response or "error" in json_response
 
-    # If successful, validate the data
     if json_response["success"]:
         data = json_response["data"]
         assert isinstance(data, dict)
-        # Check that the extracted data contains our expected fields
-        # but be flexible about the exact values since AI extraction may vary
         assert "city" in data
         assert isinstance(data["city"], str)
         assert "Paris" in data["city"]
@@ -160,5 +152,4 @@ def test_extraction_api(client):
 
         if "population" in data:
             assert isinstance(data["population"], (int, float))
-            # Allow for some variation in how the population might be extracted
             assert 2.0 <= float(data["population"]) <= 2.4  # Accept reasonable range

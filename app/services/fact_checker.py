@@ -84,67 +84,6 @@ class TeapotFactChecker:
                 f"Error occurred during fact checking: {str(e)}"
             )
 
-    def _process_with_documents(
-        self, query: str, documents: List[Dict[str, Any]]
-    ) -> Dict[str, Any]:
-        """Process a query using RAG with provided documents"""
-        logger.debug(f"Processing {len(documents)} documents")
-
-        self.stored_documents = []
-        for doc in documents:
-            content = doc.get("content", "")
-            metadata = doc.get("metadata", {})
-            self.stored_documents.append({"content": content, "metadata": metadata})
-
-        combined_context = "\n\n".join(
-            [
-                doc.get("content", "")
-                for doc in self.stored_documents
-                if doc.get("content")
-            ]
-        )
-
-        if not combined_context:
-            logger.warning("Documents provided but no content extracted")
-            return self._process_without_context(query)
-
-        result = self.model.query(query=query, context=combined_context)
-
-        return self._process_result(result, has_context=True)
-
-    def _process_with_context(self, query: str, context: str) -> Dict[str, Any]:
-        """Process a query with provided context"""
-        logger.debug("Using provided context for query")
-
-        result = self.model.query(query=query, context=context)
-
-        return self._process_result(result, has_context=True)
-
-    def _process_without_context(self, query: str) -> Dict[str, Any]:
-        """Process a query without context (likely to get hallucination resistance)"""
-        logger.debug("Using query without additional context")
-
-        result = self.model.query(query=query)
-
-        return self._process_result(result, has_context=False)
-
-    def _process_result(self, result: str, has_context: bool = True) -> Dict[str, Any]:
-        """Process the result from TeapotAI model"""
-        is_factual = not self._contains_refusal_phrases(result)
-        confidence = self._estimate_confidence(result, has_context)
-        sources = self._get_sources()
-
-        logger.info(
-            f"Fact check complete. Factual: {is_factual}, Confidence: {confidence:.2f}"
-        )
-
-        return {
-            "factual": is_factual,
-            "answer": result,
-            "confidence": confidence,
-            "sources": sources,
-        }
-
     def extract_information(
         self,
         model_class: Type[T],
@@ -199,6 +138,50 @@ class TeapotFactChecker:
         except Exception as e:
             logger.exception(f"Error during information extraction: {e}")
             return self._create_error_response(f"Extraction failed: {str(e)}")
+
+    def _process_with_documents(
+        self, query: str, documents: List[Dict[str, Any]]
+    ) -> Dict[str, Any]:
+        """Process a query using RAG with provided documents"""
+        logger.debug(f"Processing {len(documents)} documents")
+
+        self.stored_documents = []
+        for doc in documents:
+            content = doc.get("content", "")
+            metadata = doc.get("metadata", {})
+            self.stored_documents.append({"content": content, "metadata": metadata})
+
+        combined_context = "\n\n".join(
+            [
+                doc.get("content", "")
+                for doc in self.stored_documents
+                if doc.get("content")
+            ]
+        )
+
+        if not combined_context:
+            logger.warning("Documents provided but no content extracted")
+            return self._process_without_context(query)
+
+        result = self.model.query(query=query, context=combined_context)
+
+        return self._process_result(result, has_context=True)
+
+    def _process_with_context(self, query: str, context: str) -> Dict[str, Any]:
+        """Process a query with provided context"""
+        logger.debug("Using provided context for query")
+
+        result = self.model.query(query=query, context=context)
+
+        return self._process_result(result, has_context=True)
+
+    def _process_without_context(self, query: str) -> Dict[str, Any]:
+        """Process a query without context (likely to get hallucination resistance)"""
+        logger.debug("Using query without additional context")
+
+        result = self.model.query(query=query)
+
+        return self._process_result(result, has_context=False)
 
     def _create_error_response(self, error_message: str) -> Dict[str, Any]:
         """Create a standardized error response"""
@@ -336,3 +319,20 @@ class TeapotFactChecker:
 
         logger.debug(f"Retrieved {len(sources)} sources")
         return sources
+
+    def _process_result(self, result: str, has_context: bool = True) -> Dict[str, Any]:
+        """Process the result from TeapotAI model"""
+        is_factual = not self._contains_refusal_phrases(result)
+        confidence = self._estimate_confidence(result, has_context)
+        sources = self._get_sources()
+
+        logger.info(
+            f"Fact check complete. Factual: {is_factual}, Confidence: {confidence:.2f}"
+        )
+
+        return {
+            "factual": is_factual,
+            "answer": result,
+            "confidence": confidence,
+            "sources": sources,
+        }
