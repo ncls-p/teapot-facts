@@ -1,0 +1,249 @@
+{
+  "accuracy": 1.0,
+  "avg_confidence": 0.9,
+  "total_samples": 20,
+  "total_blogs": 20,
+  "evaluation_date": "2025-03-24T16:06:55.291020",
+  "results": [
+    {
+      "blog_text": "Google claque 32 milliards pour Wiz, sa plus grosse acquisition jamais r\u00c3\u00a9alis\u00c3\u00a9e | Cybers\u00c3\u00a9curit\u00c3\u00a9 | Le site de Korben Rejoignez-moi sur YouTube \u00f0\u009f\u008e\u00a5\u00f0\u009f\u009a\u0080 Abonnez-vous \u00c3\u00a0 ma cha\u00c3\u00aene YouTube ! Google c...",
+      "key_points_results": [
+        {
+          "key_point": "Here are the key points of the article: * Google has acquired Wiz for $32 billion, marking its largest acquisition to date. * Wiz is an Israeli-American startup specializing in cloud infrastructure cybersecurity. * The acquisition aims to strengthen Google Cloud's position against competitors like Amazon Web Services and Microsoft Azure. * Wiz was founded in 2020 by former Microsoft executives and Israeli military cybersecurity experts. * The startup has quickly become a leader in the sector, serving half of the Fortune 100 companies. * Google previously attempted to acquire Wiz in 2024 for $23 billion, but the offer was declined. * The acquisition is under scrutiny by U.S. authorities due to potential antitrust concerns. * There is uncertainty about whether Wiz will continue to support cloud infrastructures from Amazon and Microsoft after the acquisition. * Google has previously acquired Mandiant, another cybersecurity firm, for $5.4 billion in 2022. * The deal is pending approval from U.S. regulatory bodies, which could impact the transaction's completion.",
+          "factual": true,
+          "confidence": 0.9,
+          "correct": true,
+          "model_answer": "Google has acquired Wiz, an Israeli-American startup specializing in cloud infrastructure cybersecurity,"
+        }
+      ]
+    },
+    {
+      "blog_text": "Nous sommes trop cons - Ou comment la tech bouffe notre cerveau | Curiosit\u00c3\u00a9s tech | Le site de Korben Prot\u00c3\u00a9gez votre vie priv\u00c3\u00a9e en ligne avec Incogni \u00f0\u009f\u009b\u00a1\u00ef\u00b8\u008f\u00f0\u009f\u0094\u0092 R\u00c3\u00a9duisez les risques de spam et de...",
+      "key_points_results": [
+        {
+          "key_point": "Here are the key points of the article: * The article discusses the cognitive decline in society, which is seen as a significant threat in the 21st century. * Data from the Financial Times indicates that reasoning and problem-solving abilities peaked in the early 2010s and have been declining since. * PISA scores, which measure the performance of 15-year-olds in reading, math, and science, have been decreasing since 2012. * Adults are experiencing reduced reasoning skills, with a notable decline in the ability to use mathematical reasoning. * There is a growing difficulty in concentration, and fewer adults in the U.S. are reading books annually. * The article suggests that digital tools and infinite scrolling on apps contribute to reduced attention spans and cognitive abilities. * Constant exposure to digital content is likened to a DDoS attack on the brain, leading to increased vulnerability to misinformation. * The presence of smartphones, even when turned off, can reduce cognitive capacity. * The article proposes digital detox and cognitive exercises as solutions to combat cognitive decline. * Recommendations include limiting screen time, engaging in deep reading, and practicing simple mental calculations. * The article emphasizes the importance of protecting and preserving attention quality in the digital age.",
+          "factual": true,
+          "confidence": 0.9,
+          "correct": true,
+          "model_answer": "The article discusses the cognitive decline in society, which is seen as a significant threat in"
+        }
+      ]
+    },
+    {
+      "blog_text": "LetterFall - Quand Tetris rencontre Wordle, votre productivit\u00c3\u00a9 tremble | Jeux | Le site de Korben Offre Sp\u00c3\u00a9ciale \u00f0\u009f\u008d\u0092\u00f0\u009f\u008d\u0095\u00f0\u009f\u00a5\u009d\u00f0\u009f\u008d\u0094\u00f0\u009f\u00a5\u0091\u00f0\u009f\u00a5\u0097 10\u00e2\u0082\u00ac offerts avec JOW - Code: 2LE2QR (Lien affili\u00c3\u00a9) Letter...",
+      "key_points_results": [
+        {
+          "key_point": "Here are the key points of the article: * LetterFall is a hybrid game combining elements of Tetris and Wordle. * Players must form valid words of at least four letters from falling letters on a grid. * Successfully forming words clears space on the grid, preventing it from filling up. * The game includes achievements to unlock and scores words based on length. * Words must be in English, and the game speeds up as players level up. * LetterFall runs directly in a web browser, requiring no installation. * The article also mentions a promotional offer from o2switch for web hosting services.",
+          "factual": true,
+          "confidence": 0.9,
+          "correct": true,
+          "model_answer": "The article discusses LetterFall, a hybrid game combining elements of Tetris"
+        }
+      ]
+    },
+    {
+      "blog_text": "uutils - Ubuntu remplace ses commandes Linux par du Rust | PC - Mac - Linux | Le site de Korben Prot\u00c3\u00a9gez votre vie priv\u00c3\u00a9e en ligne avec Incogni \u00f0\u009f\u009b\u00a1\u00ef\u00b8\u008f\u00f0\u009f\u0094\u0092 R\u00c3\u00a9duisez les risques de spam et de vol d'...",
+      "key_points_results": [
+        {
+          "key_point": "Here are the key points of the article: * Canonical, the company behind Ubuntu, is considering replacing GNU Core Utilities written in C with 'uutils', their Rust equivalents. * Core Utilities are essential Linux commands like cp, mv, and cat, used daily by Linux users. * The transition to Rust offers benefits such as improved memory safety, better performance, and modernized code. * A concern within the community is the shift from a GPL license (GNU) to an MIT license (uutils), which has different implications for sharing modifications. * Canonical plans to implement uutils in Ubuntu version 25.10 and possibly in the LTS version 26.04 in 2026. * An experimental tool called 'oxidizr' has been developed to switch between GNU and Rust implementations for testing purposes. * The move to Rust is part of a broader trend of modernization within the Linux ecosystem.",
+          "factual": true,
+          "confidence": 0.9,
+          "correct": true,
+          "model_answer": "The company behind Ubuntu is considering replacing GNU Core Utilities written in C with "
+        }
+      ]
+    },
+    {
+      "blog_text": "IA : Baidu s\u00e2\u0080\u0099attaque \u00c3\u00a0 DeepSeek avec ERNIE 4.5 et X1 | Intelligence artificielle | Le site de Korben Rejoignez-moi sur YouTube \u00f0\u009f\u008e\u00a5\u00f0\u009f\u009a\u0080 Abonnez-vous \u00c3\u00a0 ma cha\u00c3\u00aene YouTube ! IA : Baidu s\u00e2\u0080\u0099attaque \u00c3...",
+      "key_points_results": [
+        {
+          "key_point": "Here are the key points of the article: * Baidu has announced ERNIE 4.5, a multimodal AI model, and ERNIE X1, focused on reasoning, to compete with American AI technologies. * ERNIE 4.5 claims to surpass OpenAI's GPT-4.5 in several benchmarks while being more cost-effective. * The model can process text, images, audio, and video, with improvements in comprehension, content generation, logic, and memory. * ERNIE 4.5 includes technical innovations like FlashMask to optimize model attention and reinforced training to reduce AI \"hallucinations.\" * ERNIE X1 is positioned as a competitor to DeepSeek's R1 model, offering advanced reasoning, planning, and comprehension at half the cost. * Baidu's strategy includes offering powerful models at competitive prices and making ERNIE Bot free to increase user adoption. * ERNIE 4.5 will be open-sourced on June 30, encouraging developers to test and integrate Baidu's technology. * The AI market is highly competitive, with Baidu aiming to challenge American companies like OpenAI and DeepSeek.",
+          "factual": true,
+          "confidence": 0.9,
+          "correct": true,
+          "model_answer": "The article highlights the importance of AI in the Chinese economy, with Baidu aiming to challenge"
+        }
+      ]
+    },
+    {
+      "blog_text": "GTA Vice City sur Dreamcast - L'exploit impossible des fans | Jeux | Le site de Korben Prot\u00c3\u00a9gez votre vie priv\u00c3\u00a9e en ligne avec Incogni \u00f0\u009f\u009b\u00a1\u00ef\u00b8\u008f\u00f0\u009f\u0094\u0092 R\u00c3\u00a9duisez les risques de spam et de vol d'identit\u00c3\u00a9...",
+      "key_points_results": [
+        {
+          "key_point": "Here are the key points of the article: * Fans have successfully ported GTA Vice City to the Sega Dreamcast, a console discontinued in 2001. * Rockstar initially planned to release GTA3 on Dreamcast but canceled the project. * Developers Falco Girgis and his team managed to run the game on Dreamcast's limited 16 MB RAM using advanced optimization techniques. * They used GCC 14.2.0 compiler with C++20 support and a hybrid optimization strategy to balance size and speed. * The team exploited the Dreamcast's SH4 processor capabilities, using specific flags for faster mathematical calculations. * They implemented a 2x horizontal anti-aliasing, enhancing graphics without significant performance loss. * The game includes unique features for Dreamcast, like displaying health and weapons on the VMU screen. * The port is available in alpha version, with instructions for playing it on Dreamcast using a CD-R or GDEmu. * The project is open source, inviting contributions from developers. * This achievement showcases the potential of the Dreamcast and the passion of its fan community.",
+          "factual": true,
+          "confidence": 0.9,
+          "correct": true,
+          "model_answer": "The Dreamcast is a popular gaming console that was discontinued in 2001, but fans have successfully"
+        }
+      ]
+    },
+    {
+      "blog_text": "Comment les IA transforment tout code en code open source | Intelligence artificielle | Le site de Korben Rejoignez-moi sur YouTube \u00f0\u009f\u008e\u00a5\u00f0\u009f\u009a\u0080 Abonnez-vous \u00c3\u00a0 ma cha\u00c3\u00aene YouTube ! Comment les IA transfo...",
+      "key_points_results": [
+        {
+          "key_point": "Here are the key points of the article: * AI tools like Claude Code can transform any software into open-source code by bypassing traditional code protection methods such as compilation and obfuscation. * Claude Code, developed in Typescript, uses the LLM Claude Sonnet 3.7 to analyze and reconstruct code, even when it's obfuscated or minified. * Geoffrey Huntley demonstrated this by using Claude Code to de-obfuscate and convert a minified 5MB file into readable code. * The process involves using a large language model (LLM) to analyze the code and create a specification of the application's features, converting it into a readable version. * This method can also perform de-obfuscation, transpilation, and structure-to-structure conversion across different programming languages, including binary code. * The technique allows for the recreation of proprietary functionalities without directly copying the original code, similar to reverse engineering practices. * The implications are significant for startups and companies with proprietary software, as their features can be replicated quickly and easily. * The article suggests that developers and hackers can leverage this capability to create new APIs, recode proprietary software, or liberate source code. * The focus shifts from protecting code to creating value beyond the code itself, as the ability to read and transform obfuscated code becomes more accessible.",
+          "factual": true,
+          "confidence": 0.9,
+          "correct": true,
+          "model_answer": "Claude Code is an AI tool that can transform any software into open-source code by bypass"
+        }
+      ]
+    },
+    {
+      "blog_text": "Fleur MCP - Comment donner des super-pouvoirs \u00c3\u00a0 Claude | Intelligence artificielle | Le site de Korben Rejoignez-moi sur YouTube \u00f0\u009f\u008e\u00a5\u00f0\u009f\u009a\u0080 Abonnez-vous \u00c3\u00a0 ma cha\u00c3\u00aene YouTube ! Fleur MCP - Comment donn...",
+      "key_points_results": [
+        {
+          "key_point": "Here are the key points of the article: * The article discusses enhancing the capabilities of Claude, an AI developed by Anthropic, using a protocol called MCP (Model Context Protocol). * MCP allows Claude to interact with external applications like GitHub, browsers, and Slack, transforming it from a text-based AI into a more interactive digital assistant. * Fleur is an application that simplifies the installation of MCP connectors, acting as an \"App Store\" for these connectors, making it accessible to non-developers. * Fleur is currently available only on macOS, with a user-friendly interface that lists available MCP connectors. * Some available connectors include GitHub, Browser, Slack, Hacker News, Fetch, Obsidian, Linear, and Rember, each enabling specific interactions with these platforms. * The article highlights the potential of MCP to automate tasks and enhance productivity by combining multiple connectors. * Limitations include the availability of Fleur only on macOS, a limited number of connectors, and potential security concerns when granting access to personal accounts. * Developers can create their own MCP connectors, with Fleur being open-source and documented for contribution. * The article envisions a future where Claude could perform tasks like booking services, managing calendars, and automating complex workflows. * The approach taken by Anthropic is likened to the Unix philosophy of doing one thing well and enabling communication between programs.",
+          "factual": true,
+          "confidence": 0.9,
+          "correct": true,
+          "model_answer": "The article discusses enhancing the capabilities of Claude, an AI developed by Anthropic"
+        }
+      ]
+    },
+    {
+      "blog_text": "GAM.ONL - Des milliers de jeux r\u00c3\u00a9tro gratuits dans votre navigateur | Jeux | Le site de Korben Rejoignez-moi sur YouTube \u00f0\u009f\u008e\u00a5\u00f0\u009f\u009a\u0080 Abonnez-vous \u00c3\u00a0 ma cha\u00c3\u00aene YouTube ! GAM.ONL - Des milliers de jeux r...",
+      "key_points_results": [
+        {
+          "key_point": "Here are the key points of the article: * GamONL offers thousands of free retro games playable directly in your browser. * The site includes games from various consoles like PlayStation, N64, SEGA, Nintendo, Atari, and Arcade. * It uses WebAssembly and RetroArch to run games, allowing users to select a machine and game quickly. * The interface supports keyboard and Xbox controller inputs, with advanced options accessible via F1. * Users can save their game progress using \"save states.\" * The service is also available on smartphones through an Android app, supporting touch controls and Bluetooth controllers. * The site contains some invasive advertisements, which are the trade-off for free access to nostalgic games. * The article encourages both new and old gamers to explore these classic games. * A separate section promotes o2switch's hosting service, highlighting its features like unlimited disk space and 24/7 support.",
+          "factual": true,
+          "confidence": 0.9,
+          "correct": true,
+          "model_answer": "The article highlights the benefits of GamONL, a site that offers thousands of free retro"
+        }
+      ]
+    },
+    {
+      "blog_text": "La Super Nintendo devient plus rapide en vieillissant (et on n'y comprend rien) | Curiosit\u00c3\u00a9s tech | Le site de Korben H\u00c3\u00a9bergement Puissant \u00f0\u009f\u008c\u0090\u00f0\u009f\u009a\u0080 Offre Unique o2switch - Cliquez ici ! (Lien parten...",
+      "key_points_results": [
+        {
+          "key_point": "Here are the key points of the article: * The Super Nintendo's Audio Processing Unit (APU) is reportedly operating faster now than when it was released in the 1990s. * Data from TASbot, used in speedruns, shows the original frequency of 31965 Hz has increased to an average of 32076 Hz, with a maximum of 32182 Hz. * This change results in a slight increase in the pitch of sounds, affecting the audio fidelity of games. * The phenomenon is more pronounced when the console heats up. * Various hypotheses are being discussed, including natural aging of components, alteration of clock crystals, thermal effects, changes in circuit impedance, and evaporation of plasticizers in capacitors. * Some gamers have previously discovered that heating the console can facilitate glitches in games like Dragon Quest 3. * The article humorously speculates on other potential changes in old electronics, like a Game Boy becoming more battery-efficient. * Instructions are provided for testing if a SNES console has experienced this speed increase using specific hardware and software. * The article encourages readers to share their test results and join the TASBot Discord for more information.",
+          "factual": true,
+          "confidence": 0.9,
+          "correct": true,
+          "model_answer": "The Super Nintendo's Audio Processing Unit (APU) is reportedly operating faster now than"
+        }
+      ]
+    },
+    {
+      "blog_text": "DuckDB UI - L'arme secr\u00c3\u00a8te de l'analyse de donn\u00c3\u00a9es | Outils dev | Le site de Korben Prot\u00c3\u00a9gez votre vie priv\u00c3\u00a9e en ligne avec Incogni \u00f0\u009f\u009b\u00a1\u00ef\u00b8\u008f\u00f0\u009f\u0094\u0092 R\u00c3\u00a9duisez les risques de spam et de vol d'identit\u00c3\u00a9 ...",
+      "key_points_results": [
+        {
+          "key_point": "Here are the key points of the article: * DuckDB UI is a user interface that allows users to visualize, manipulate, and understand data without needing extensive SQL knowledge. * DuckDB is an embedded, high-performance SQL engine designed for data analysis, known for its serverless approach, lightweight nature, and columnar architecture. * The UI can be launched in a browser and offers features like auto-completion, syntax highlighting, and interactive notebooks. * It supports multiple data formats such as CSV, JSON, and Parquet, and integrates with systems like PostgreSQL and SQLite. * The interface is open-source and operates locally, ensuring data privacy. * Users can start the UI with the command `duckdb -ui` or `CALL start_ui();` in a DuckDB client. * The column explorer provides automatic statistics and graphical representations of data without coding. * There is an optional integration with MotherDuck, the cloud version of DuckDB, for data sharing. * DuckDB UI aims to make data analysis accessible to non-experts and enhances the capabilities of DuckDB.",
+          "factual": true,
+          "confidence": 0.9,
+          "correct": true,
+          "model_answer": "The DuckDB UI is a user interface that allows users to visualize, manipulate, and"
+        }
+      ]
+    },
+    {
+      "blog_text": "Le remake de Lilo &amp; Stitch balance sa premi\u00c3\u00a8re bande-annonce | Tendances web | Le site de Korben H\u00c3\u00a9bergement Puissant \u00f0\u009f\u008c\u0090\u00f0\u009f\u009a\u0080 Offre Unique o2switch - Cliquez ici ! (Lien partenaire) Le remake d...",
+      "key_points_results": [
+        {
+          "key_point": "Here are the key points of the article: * A live-action remake of \"Lilo & Stitch\" is set to release on May 21, 2025. * The film features Maia Kealoha as Lilo, Chris Sanders reprising his role as the voice of Stitch, and Sydney Agudong as Nani. * The project faced challenges, including changes in directors and casting controversies. * Dean Fleischer Camp, known for \"Marcel the Shell with Shoes On,\" is directing the remake. * The CGI adaptation of Stitch aims to maintain the character's original essence without falling into the uncanny valley. * The remake seeks to preserve the original film's themes of family, acceptance, and redemption. * The article expresses optimism about the remake, noting that it appears faithful to the original in terms of humor and storytelling.",
+          "factual": true,
+          "confidence": 0.9,
+          "correct": true,
+          "model_answer": "The article highlights the importance of the live-action remake of \"Lilo & St"
+        }
+      ]
+    },
+    {
+      "blog_text": "Firefox - Mettez \u00c3\u00a0 jour avant vendredi ou gare \u00c3\u00a0 la catastrophe ! | Cybers\u00c3\u00a9curit\u00c3\u00a9 | Le site de Korben Offre Sp\u00c3\u00a9ciale \u00f0\u009f\u008d\u0092\u00f0\u009f\u008d\u0095\u00f0\u009f\u00a5\u009d\u00f0\u009f\u008d\u0094\u00f0\u009f\u00a5\u0091\u00f0\u009f\u00a5\u0097 10\u00e2\u0082\u00ac offerts avec JOW - Code: 2LE2QR (Lien affili\u00c3\u00a9)...",
+      "key_points_results": [
+        {
+          "key_point": "Here are the key points of the article: * Mozilla Firefox users are urged to update their browser before March 14, 2025, to avoid issues due to an expiring root certificate. * The expiration of this certificate could lead to the deactivation of extensions, inaccessible DRM-protected content, and potential security risks. * The update is necessary for all versions below Firefox 128 or ESR 115.13. * A similar issue occurred in May 2019, causing widespread extension deactivation. * Users can update Firefox by accessing the \"About Firefox\" section in the Help menu, which will automatically check for updates. * The urgency of this update coincides with recent changes in Mozilla's privacy policy, raising user concerns about data usage. * Firefox's market share has dropped below 3%, a significant decline from its peak in 2009. * Alternatives like Waterfox and LibreWolf offer similar experiences with enhanced privacy. * The article encourages continued support for Firefox despite challenges.",
+          "factual": true,
+          "confidence": 0.9,
+          "correct": true,
+          "model_answer": "The article highlights the importance of updating Mozilla Firefox before March 14, 2025 to avoid issues due to"
+        }
+      ]
+    },
+    {
+      "blog_text": "C\u00c3\u00a2ble enablink USB-C 2-en-1 (72W) : c\u00e2\u0080\u0099est quoi encore ce truc ? | Gadgets tech | Le site de Korben Offre Sp\u00c3\u00a9ciale \u00f0\u009f\u008d\u0092\u00f0\u009f\u008d\u0095\u00f0\u009f\u00a5\u009d\u00f0\u009f\u008d\u0094\u00f0\u009f\u00a5\u0091\u00f0\u009f\u00a5\u0097 10\u00e2\u0082\u00ac offerts avec JOW - Code: 2LE2QR (Lien affili\u00c3\u00a9) C\u00c3\u00a2...",
+      "key_points_results": [
+        {
+          "key_point": "Here are the key points of the article: * The enablink USB-C 2-en-1 cable allows charging of two devices simultaneously with a total power output of 72W (60W + 12W). * It features a 100% USB-C design, with one port supporting up to 60W and the other up to 12W, suitable for charging devices like laptops and smartphones. * The cable is made of durable nylon braiding and aluminum alloy connectors, ensuring longevity and resistance to wear. * It measures 1.2 meters in length, providing flexibility for use at home, in the office, or on the go. * The cable intelligently manages power distribution to optimize charging without interference between devices. * It is compatible with a wide range of devices, including MacBook Air/Pro, iPhone 15 series, Samsung Galaxy S24 series, Google Pixel, iPad, Nintendo Switch, and Steam Deck. * The cable is priced at 16.99 \u20ac, with additional discounts available on Amazon. * The article recommends pairing the cable with an Anker 100W charger for optimal performance. * The author, Vincent Lautier, emphasizes the cable's practicality, performance, and affordability as key selling points.",
+          "factual": true,
+          "confidence": 0.9,
+          "correct": true,
+          "model_answer": "The enablink USB-C 2-en-1 cable allows charging of two devices simultaneously"
+        }
+      ]
+    },
+    {
+      "blog_text": "Local Deep Research - L'assistant de recherche IA open-source qui cite ses sources | Intelligence artificielle | Le site de Korben Prot\u00c3\u00a9gez votre vie priv\u00c3\u00a9e en ligne avec Incogni \u00f0\u009f\u009b\u00a1\u00ef\u00b8\u008f\u00f0\u009f\u0094\u0092 R\u00c3\u00a9duis...",
+      "key_points_results": [
+        {
+          "key_point": "Here are the key points of the article: * Local Deep Research is an open-source AI research assistant that cites its sources, providing a cost-effective alternative to OpenAI's Deep Research feature. * The tool can be self-hosted and utilizes online sources like Wikipedia, arXiv, PubMed, and DuckDuckGo for gathering information. * It processes collected data using large language models (LLMs) either in the cloud or locally, with options like ChatGPT, Claude, or Ollama. * Local Deep Research functions like a digital Sherlock Holmes, generating follow-up questions to verify and deepen the research, reducing false references. * Key advantages include total privacy, intelligent multi-source selection, citation verification, and the ability to search personal documents. * The tool features an intuitive web interface with search history and PDF export capabilities. * Installation involves cloning the repository, setting up a virtual environment, installing dependencies, and configuring API keys. * For local use, a minimum of 16GB RAM and a decent GPU are recommended for optimal performance. * Users can add personal document collections to the search, enabling analysis of PDFs, notes, and Word documents. * The project is open-source, inviting contributions for improvements and adaptations.",
+          "factual": true,
+          "confidence": 0.9,
+          "correct": true,
+          "model_answer": "Local Deep Research is an open-source AI research assistant that cites its sources, providing"
+        }
+      ]
+    },
+    {
+      "blog_text": "La recompilation, la r\u00c3\u00a9volution du retrogaming - Sonic Unleashed montre la voie ! | Jeux | Le site de Korben Offre Sp\u00c3\u00a9ciale \u00f0\u009f\u008d\u0092\u00f0\u009f\u008d\u0095\u00f0\u009f\u00a5\u009d\u00f0\u009f\u008d\u0094\u00f0\u009f\u00a5\u0091\u00f0\u009f\u00a5\u0097 10\u00e2\u0082\u00ac offerts avec JOW - Code: 2LE2QR (Lien affil...",
+      "key_points_results": [
+        {
+          "key_point": "Here are the key points of the article: * Sonic Unleashed has been recompiled for PC, offering enhanced graphics and performance over the original Xbox 360 version. * The recompilation process involves translating the game's code to run natively on PC, unlike traditional emulation. * This method allows for native performance and the addition of new features, such as 4K resolution, 144 Hz refresh rate, and improved graphical effects. * The recompilation uses tools like XenonRecomp and XenosRecomp to convert Xbox 360's PowerPC instructions to x86 code for modern processors. * The technology requires a PC with AVX support, DirectX 12 or Vulkan 1.2 compatible GPU, and at least 8 GB of RAM. * Recompilation is seen as a promising way to preserve games from the PS3/Xbox 360 era, offering better quality than emulation. * Users need a legal copy of Sonic Unleashed and specific hardware to extract and run the recompiled version. * The article suggests that recompilation could inspire developers to port more Xbox 360 games to PC.",
+          "factual": true,
+          "confidence": 0.9,
+          "correct": true,
+          "model_answer": "The article discusses the recompilation of Sonic Unleashed for PC,"
+        }
+      ]
+    },
+    {
+      "blog_text": "Windows 11 sur Raspberry Pi - BVM rend l'impossible possible | Logiciels utiles | Le site de Korben Rejoignez-moi sur YouTube \u00f0\u009f\u008e\u00a5\u00f0\u009f\u009a\u0080 Abonnez-vous \u00c3\u00a0 ma cha\u00c3\u00aene YouTube ! Windows 11 sur Raspberry Pi ...",
+      "key_points_results": [
+        {
+          "key_point": "Here are the key points of the article: * BVM (Botspot Virtual Machine) allows Windows 11 ARM to run on Raspberry Pi 4 and 5, as well as RockChip RK3588 devices. * BVM is an open-source project that automates the installation of Windows 11 ARM using KVM for hardware virtualization and QEMU for the virtual environment. * The system supports network, USB, and audio passthrough, file sharing between Windows and the host system, and includes Microsoft's Prism emulator for running x86/x64 applications on ARM architecture. * Installation can be done via command line or a graphical user interface (GUI), with the process being fully automated. * The setup requires a minimum of 4 GB RAM and 50 GB of disk space, with a recommendation to use an SSD for better performance. * While 3D graphics acceleration is currently unavailable, the system is suitable for running specific Windows applications like Microsoft Office, Visual Studio, and lightweight CAD software. * The BVM setup allows for remote access via RDP and can mount the virtual Windows disk directly in the Linux system for file transfers. * Future developments may include 3D graphics acceleration and a \"RemoteApp\" mode for integrating Windows application windows into the Linux desktop.",
+          "factual": true,
+          "confidence": 0.9,
+          "correct": true,
+          "model_answer": "The BVM allows Windows 11 ARM to run on Raspberry Pi 4 and 5, as well as"
+        }
+      ]
+    },
+    {
+      "blog_text": "Rayhunter - L'outil open-source qui d\u00c3\u00a9tecte si la police espionne votre t\u00c3\u00a9l\u00c3\u00a9phone | Protection des donn\u00c3\u00a9es | Le site de Korben Rejoignez-moi sur YouTube \u00f0\u009f\u008e\u00a5\u00f0\u009f\u009a\u0080 Abonnez-vous \u00c3\u00a0 ma cha\u00c3\u00aene YouTube...",
+      "key_points_results": [
+        {
+          "key_point": "Here are the key points of the article: * Rayhunter is an open-source tool developed by the EFF to detect IMSI catchers, which are used for discreet and invasive surveillance. * IMSI catchers, also known as Stingrays, mimic legitimate cell towers to intercept communications and track phones without carrier involvement. * Rayhunter works with a mobile hotspot device to analyze control traffic and detect suspicious activities, such as forced downgrades to 2G networks. * The tool alerts users through a simple color-coded system and provides detailed logs via a web interface. * Installation involves downloading the software, connecting a hotspot device, and running a script on Mac or Linux. * In France, the use of IMSI catchers is legally restricted, but there are concerns about unauthorized use during events like protests. * The EFF aims for Rayhunter to help identify misuse of surveillance technologies, especially in contexts protected by the First Amendment in the U.S. * The article also briefly mentions a promotional offer from o2switch for web hosting services.",
+          "factual": true,
+          "confidence": 0.9,
+          "correct": true,
+          "model_answer": "The article discusses the use of IMSI catchers, also known as Stingray"
+        }
+      ]
+    },
+    {
+      "blog_text": "Fini les distractions avec Lowfi, le lecteur de musique lofi ultra-minimaliste | Open source | Le site de Korben Suivez-moi en direct sur Twitch \u00f0\u009f\u008e\u00ae\u00f0\u009f\u0093\u00ba Rejoignez ma communaut\u00c3\u00a9 Twitch ! Fini les dis...",
+      "key_points_results": [
+        {
+          "key_point": "Here are the key points of the article: * Lowfi is an ultra-minimalist music player designed for listening to Lo-Fi music without distractions. * Developed in Rust, Lowfi streams music legally from the Lofi Girl website without ads or complex interfaces. * The app can be installed via a simple command in the terminal, with additional options for Linux users. * Lowfi preloads five tracks to ensure uninterrupted playback even with poor internet connections. * Users can customize the player with various options such as alternate screen, minimalist mode, and custom tracklists. * The app is praised for its simplicity and effectiveness, embodying the philosophy of doing one thing well. * Lowfi is suitable for fans of Lo-Fi music who prefer a straightforward, distraction-free listening experience.",
+          "factual": true,
+          "confidence": 0.9,
+          "correct": true,
+          "model_answer": "The article discusses Lowfi, an ultra-minimalist music player designed for listening"
+        }
+      ]
+    },
+    {
+      "blog_text": "CL1 - Le premier ordinateur au monde fonctionnant avec de v\u00c3\u00a9ritables neurones humains | Intelligence artificielle | Le site de Korben H\u00c3\u00a9bergement Puissant \u00f0\u009f\u008c\u0090\u00f0\u009f\u009a\u0080 Offre Unique o2switch - Cliquez ic...",
+      "key_points_results": [
+        {
+          "key_point": "Here are the key points of the article: * Cortical Labs, an Australian company, has developed the first computer using real human brain cells cultivated in a lab, called the CL1. * The CL1 operates using a Neural Biological Unit (NBU) with neurons placed on a network of 59 electrodes, maintained in a life-support unit. * It is managed by a Biological Intelligence Operating System (biOS) and is primarily used for artificial intelligence applications. * The system is more energy-efficient, learns faster, and offers a more natural form of intelligence compared to traditional AI. * The CL1 can function continuously for up to six months and is priced at $35,000. * Potential applications include personalized drug discovery, precise clinical trials, and modeling neurological diseases like Alzheimer's and epilepsy. * The technology offers an ethical alternative to animal testing by using human cells directly. * Cortical Labs is exploring the concept of a \"Minimum Viable Brain\" to determine the optimal number of neurons needed for functional intelligence. * The company offers its technology as a \"Wetware-as-a-Service\" (WaaS), allowing access to this biological computer via the cloud. * Ethical considerations are raised about the potential consciousness of neural networks and the rights of such systems.",
+          "factual": true,
+          "confidence": 0.9,
+          "correct": true,
+          "model_answer": "The CL1 is a computer that uses real human brain cells cultivated in a lab"
+        }
+      ]
+    }
+  ]
+}

@@ -15,6 +15,7 @@ A fact-checking API service with OpenAI-compatible endpoints. This service provi
 - [API Endpoints](#api-endpoints)
 - [Testing](#testing)
 - [Development](#development)
+- [Model Evaluation](#model-evaluation)
 
 ## Features
 
@@ -277,3 +278,46 @@ teapot-facts/
 - **Services (`app/services/`)**: Core business logic implementation
 - **Utils (`app/utils.py`)**: Shared utility functions
 - **Tests (`tests/`)**: Comprehensive test suite for all components
+
+## Model Evaluation
+
+### Running Evaluations
+
+The project includes a model evaluation script that uses the [blog key points dataset](https://huggingface.co/datasets/ncls-p/blog-key-points) to evaluate the model's performance. The script generates a detailed report of the model's accuracy and confidence in fact-checking.
+
+```bash
+# Run evaluation with default settings (10 samples)
+python evaluate_model.py
+
+# Evaluate more samples and save detailed results
+python evaluate_model.py --samples 20 --output results.json
+```
+
+Options:
+
+- `--samples`: Number of blog samples to evaluate (default: 10)
+- `--output`: Path to save detailed evaluation results as JSON
+
+The evaluation script will display:
+
+- Overall performance metrics (accuracy and confidence)
+- Sample results from the evaluation
+- Detailed progress tracking
+- Option to save full results to JSON for further analysis
+
+### Example Output
+
+```
+TeapotFacts Model Evaluation Report
+
+Date: 2025-03-24T15:45:00
+Total blogs evaluated: 10
+Total key points evaluated: 45
+
+╭─────────────────┬──────────╮
+│ Metric          │ Value    │
+├─────────────────┼──────────┤
+│ Accuracy        │ 85.33%   │
+│ Avg Confidence  │ 0.82     │
+╰─────────────────┴──────────╯
+```
