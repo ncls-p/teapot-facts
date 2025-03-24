@@ -37,10 +37,8 @@ def evaluate_fact_checking(
     total_confidence = 0
     results = []
 
-    # Take a subset of samples for evaluation
     evaluation_samples = list(blogs)[:num_samples]
 
-    # Track progress with rich
     for blog in track(evaluation_samples, description="Evaluating samples"):
         text = blog["input"]
         key_points = blog["output"].strip().split("\n")
@@ -91,13 +89,11 @@ def generate_report(
 ) -> None:
     """Generate a rich formatted report and optionally save detailed results to JSON"""
 
-    # Print summary metrics
     console.print("\n[bold blue]TeapotFacts Model Evaluation Report[/bold blue]")
     console.print(f"\nDate: {metrics['evaluation_date']}")
     console.print(f"Total blogs evaluated: {metrics['total_blogs']}")
     console.print(f"Total key points evaluated: {metrics['total_samples']}")
 
-    # Create metrics table
     metrics_table = Table(title="Performance Metrics")
     metrics_table.add_column("Metric", style="cyan")
     metrics_table.add_column("Value", style="magenta")
@@ -107,14 +103,12 @@ def generate_report(
 
     console.print(metrics_table)
 
-    # Sample results table
     results_table = Table(title="Sample Results")
     results_table.add_column("Key Point", style="cyan")
     results_table.add_column("Factual", style="green")
     results_table.add_column("Confidence", style="blue")
     results_table.add_column("Correct", style="magenta")
 
-    # Show first 5 key points as samples
     sample_count = 0
     for blog_result in metrics["results"]:
         for key_point_result in blog_result["key_points_results"]:
@@ -132,7 +126,6 @@ def generate_report(
 
     console.print(results_table)
 
-    # Save detailed results to JSON if requested
     if output_json:
         with open(output_json, "w") as f:
             json.dump(metrics, f, indent=2)
@@ -151,10 +144,8 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    # Initialize rich console
     console = Console()
 
-    # Load dataset and initialize fact checker
     console.print("[bold]Loading dataset and initializing model...[/bold]")
     try:
         dataset = load_dataset("ncls-p/blog-key-points")
@@ -175,10 +166,8 @@ def main() -> None:
 
     fact_checker = TeapotFactChecker()
 
-    # Run evaluation
     metrics = evaluate_fact_checking(fact_checker, train_data, num_samples=args.samples)
 
-    # Generate report
     generate_report(metrics, console, args.output)
 
 

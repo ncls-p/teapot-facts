@@ -16,6 +16,7 @@ A fact-checking API service with OpenAI-compatible endpoints. This service provi
 - [Testing](#testing)
 - [Development](#development)
 - [Model Evaluation](#model-evaluation)
+- [Confidence Calculation](#confidence-calculation)
 
 ## Features
 
@@ -321,3 +322,42 @@ Total key points evaluated: 45
 │ Avg Confidence  │ 0.82     │
 ╰─────────────────┴──────────╯
 ```
+
+## Confidence Calculation
+
+The TeapotFacts API uses a heuristic approach to calculate confidence scores for fact-checking results:
+
+### Base Confidence
+
+- With context: 0.9 (90%)
+- Without context: 0.3 (30%)
+
+### Confidence Adjustments
+
+The base confidence is reduced by the following factors:
+
+1. Uncertainty Markers (-0.1 for each occurrence):
+
+   - "possibly"
+   - "perhaps"
+   - "maybe"
+   - "might"
+   - "could be"
+   - "appears to be"
+   - "seems"
+   - "likely"
+
+2. Refusal Phrases (sets confidence to 0.1):
+   - "cannot answer"
+   - "don't have enough information"
+   - "insufficient context"
+   - "cannot be determined"
+   - "not enough information"
+   - "cannot be verified"
+   - "I don't know"
+   - "No information provided"
+
+The final confidence score is always between 0.1 and 0.9, where:
+
+- 0.9: Highest confidence (with context, no uncertainty)
+- 0.1: Lowest confidence (refusal to answer)
