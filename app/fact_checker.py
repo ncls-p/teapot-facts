@@ -122,7 +122,7 @@ class TeapotFactChecker:
         result = self.model.query(query=query, context=combined_context)
 
         # Process the result
-        return self._process_result(result)
+        return self._process_result(result, has_context=True)
 
     def _process_with_context(self, query: str, context: str) -> Dict[str, Any]:
         """Process a query with provided context"""
@@ -132,7 +132,7 @@ class TeapotFactChecker:
         result = self.model.query(query=query, context=context)
 
         # Process the result
-        return self._process_result(result)
+        return self._process_result(result, has_context=True)
 
     def _process_without_context(self, query: str) -> Dict[str, Any]:
         """Process a query without context (likely to get hallucination resistance)"""
@@ -142,14 +142,14 @@ class TeapotFactChecker:
         # which is exactly what we want for factual verification
         result = self.model.query(query=query)
 
-        # Process the result
-        return self._process_result(result)
+        # Process the result with reduced confidence due to lack of context
+        return self._process_result(result, has_context=False)
 
-    def _process_result(self, result: str) -> Dict[str, Any]:
+    def _process_result(self, result: str, has_context: bool = True) -> Dict[str, Any]:
         """Process the result from TeapotAI model"""
         # Create a structured response
         is_factual = not self._contains_refusal_phrases(result)
-        confidence = self._estimate_confidence(result)
+        confidence = self._estimate_confidence(result, has_context)
         sources = self._get_sources()
 
         logger.info(
@@ -247,10 +247,10 @@ class TeapotFactChecker:
 
         return any(phrase.lower() in text.lower() for phrase in refusal_phrases)
 
-    def _estimate_confidence(self, text: str) -> float:
+    def _estimate_confidence(self, text: str, has_context: bool = True) -> float:
         """
         Simple heuristic to estimate confidence in the answer
-        Low confidence if it contains uncertainty markers
+        Low confidence if it contains uncertainty markers or lacks context
         """
         uncertainty_markers = [
             "possibly",
@@ -268,8 +268,11 @@ class TeapotFactChecker:
             1 for marker in uncertainty_markers if marker.lower() in text.lower()
         )
 
-        # Base confidence is 0.9, reduced by 0.1 for each uncertainty marker
-        confidence = max(0.1, 0.9 - (0.1 * markers_count))
+        # Base confidence is 0.9 if we have context, 0.3 if we don't
+        base_confidence = 0.9 if has_context else 0.3
+
+        # Reduce confidence by 0.1 for each uncertainty marker
+        confidence = max(0.1, base_confidence - (0.1 * markers_count))
 
         # If contains refusal phrases, confidence is low
         if self._contains_refusal_phrases(text):
