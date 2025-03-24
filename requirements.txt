@@ -1,0 +1,11 @@
+teapot==2.5
+fastapi==0.110.0
+uvicorn==0.27.1
+teapotai==0.1.6
+transformers==4.39.0
+pydantic==2.5.3
+python-dotenv==1.0.0
+sentence-transformers==2.2.2
+torch==2.1.2
+pytest==8.3.5
+httpx==0.26.0
