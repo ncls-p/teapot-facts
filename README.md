@@ -2,6 +2,20 @@
 
 A fact-checking API service with OpenAI-compatible endpoints. This service provides fact verification capabilities through both standard and chat-based interfaces.
 
+## Documentation
+
+- [API Reference](docs/api.md) - Complete API documentation with examples
+- [Architecture Guide](docs/architecture.md) - Technical architecture and design decisions
+- [Development Guide](docs/development.md) - Development setup and best practices
+
+## Table of Contents
+
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [API Endpoints](#api-endpoints)
+- [Testing](#testing)
+- [Development](#development)
+
 ## Features
 
 - OpenAI-compatible completion endpoint (`/v1/completions`)
