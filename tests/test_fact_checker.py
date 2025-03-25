@@ -4,7 +4,7 @@ import sys
 import pytest
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-from app.fact_checker import TeapotFactChecker
+from app.services.fact_checker import TeapotFactChecker
 
 
 @pytest.fixture

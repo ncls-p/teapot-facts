@@ -14,7 +14,7 @@ from rich.console import Console
 from rich.table import Table
 from rich.progress import track
 
-from app.fact_checker import TeapotFactChecker
+from app.services.fact_checker import TeapotFactChecker
 
 
 def evaluate_fact_checking(
