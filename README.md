@@ -269,6 +269,9 @@ teapot-facts/
 │   ├── test_api.py
 │   └── test_fact_checker.py
 ├── server.py               # Server startup script
+├── evaluate_model.py       # TeapotFacts evaluation script
+├── evaluate_openai_model.py # OpenAI evaluation script
+├── compare_evaluations.py  # Evaluation comparison tool
 └── requirements.txt        # Project dependencies
 ```
 
@@ -284,43 +287,71 @@ teapot-facts/
 
 ### Running Evaluations
 
-The project includes a model evaluation script that uses the [blog key points dataset](https://huggingface.co/datasets/ncls-p/blog-key-points) to evaluate the model's performance. The script generates a detailed report of the model's accuracy and confidence in fact-checking.
+The project includes model evaluation scripts that use the [blog key points dataset](https://huggingface.co/datasets/ncls-p/blog-key-points) to evaluate model performance. The system supports evaluations for both TeapotFacts and OpenAI-compatible models, allowing for direct comparison between different fact-checking systems.
+
+#### TeapotFacts Evaluation
 
 ```bash
 # Run evaluation with default settings (10 samples)
 python evaluate_model.py
 
 # Evaluate more samples and save detailed results
-python evaluate_model.py --samples 20 --output results.json
+python evaluate_model.py --samples 20 --output evaluation_results.json
 ```
 
-Options:
+#### OpenAI-Compatible Evaluation
+
+```bash
+# Set your API key
+export OPENAI_API_KEY=your_api_key
+
+# Run evaluation using OpenAI's API
+python evaluate_openai_model.py --samples 20 --model gpt-3.5-turbo --output openai_evaluation_results.json
+
+# Use a different OpenAI-compatible API endpoint
+export OPENAI_API_BASE=http://your-api-endpoint
+python evaluate_openai_model.py --base-url http://your-api-endpoint
+```
+
+Options for OpenAI evaluation:
 
 - `--samples`: Number of blog samples to evaluate (default: 10)
 - `--output`: Path to save detailed evaluation results as JSON
+- `--model`: OpenAI model to use (default: gpt-3.5-turbo)
+- `--base-url`: Base URL for the API (defaults to OPENAI_API_BASE env var)
 
-The evaluation script will display:
+#### Comparing Evaluation Results
 
-- Overall performance metrics (accuracy and confidence)
-- Sample results from the evaluation
-- Detailed progress tracking
-- Option to save full results to JSON for further analysis
+After running both the TeapotFacts and OpenAI evaluations, you can compare the results using:
+
+```bash
+python compare_evaluations.py --teapot evaluation_results.json --openai openai_evaluation_results.json
+```
+
+This will generate a detailed comparison report showing:
+
+- Accuracy differences between models
+- Confidence score comparisons
+- Agreement rate between the models
+- Detailed point-by-point analysis
+- A visual summary of the performance metrics
+
+The results are also saved to a JSON file (default: `comparison_results.json`) for further analysis.
 
 ### Example Output
 
 ```
-TeapotFacts Model Evaluation Report
+TeapotFacts vs OpenAI Model Comparison Report
 
-Date: 2025-03-24T15:45:00
-Total blogs evaluated: 10
-Total key points evaluated: 45
+Date: 2025-03-26T14:32:05.123456
 
-╭─────────────────┬──────────╮
-│ Metric          │ Value    │
-├─────────────────┼──────────┤
-│ Accuracy        │ 85.33%   │
-│ Avg Confidence  │ 0.82     │
-╰─────────────────┴──────────╯
+┌─────────────────────┬───────────┬─────────┬────────────┐
+│ Metric              │ TeapotFacts │ OpenAI │ Difference │
+├─────────────────────┼───────────┼─────────┼────────────┤
+│ Accuracy            │ 85.33%    │ 78.21%  │ 7.12%      │
+│ Avg Confidence      │ 0.82      │ 0.76    │ 0.06       │
+│ Model Agreement Rate│ 89.45%    │         │            │
+└─────────────────────┴───────────┴─────────┴────────────┘
 ```
 
 ## Confidence Calculation
@@ -356,8 +387,3 @@ The base confidence is reduced by the following factors:
    - "cannot be verified"
    - "I don't know"
    - "No information provided"
-
-The final confidence score is always between 0.1 and 0.9, where:
-
-- 0.9: Highest confidence (with context, no uncertainty)
-- 0.1: Lowest confidence (refusal to answer)
